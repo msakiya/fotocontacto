@@ -1,8 +1,16 @@
 # FotoContacto (Ficha)
 
-Fotografía una tarjeta de presentación o un flyer. La app lee el **nombre de la empresa** y el **teléfono**, y deja el resto (cargo, correo, web, dirección) en las **notas** del contacto.
+**Este repositorio es público.** Cualquiera puede ver y clonar el código sin iniciar sesión:
 
-En Android, **Guardar en contactos** genera un archivo `.vcf` que la app Contactos puede importar.
+[https://github.com/msakiya/fotocontacto](https://github.com/msakiya/fotocontacto)
+
+GitHub muestra **archivos**. La app para usar en el teléfono (cámara + contactos) vive en Grok, en la ficha publicada — no en esta página de GitHub.
+
+## Qué hace
+
+Fotografía una tarjeta de presentación o un flyer. Lee el **nombre de la empresa** y el **teléfono**, y deja el resto (cargo, correo, web, dirección) en las **notas** del contacto.
+
+En Android, **Guardar en contactos** genera un `.vcf` que la app Contactos puede importar.
 
 ## Uso
 
@@ -10,7 +18,7 @@ En Android, **Guardar en contactos** genera un archivo `.vcf` que la app Contact
 2. Revisa empresa, teléfono y notas.
 3. Guarda: Android abre Contactos con el archivo `.vcf`.
 
-También puedes **instalarla en la pantalla de inicio** desde el navegador del teléfono.
+También puedes instalarla en la pantalla de inicio desde el navegador del teléfono.
 
 ## Desarrollo
 
@@ -23,8 +31,6 @@ Crea una variable de entorno `XAI_API_KEY` (clave de [xAI](https://x.ai)) para q
 ```bash
 npm run dev
 ```
-
-Abre la app en el puerto que muestre Vite (por defecto `8080`).
 
 ```bash
 npm run build
