@@ -1,14 +1,15 @@
 # FotoContacto (Ficha)
 
-**Página pública (para todos):** [https://msakiya.github.io/fotocontacto/](https://msakiya.github.io/fotocontacto/)
+**Página pública (para todos):**  
+[Abrir Ficha](https://cdn.jsdelivr.net/gh/msakiya/fotocontacto@main/docs/index.html)
 
 Fotografía una tarjeta o un flyer. La página lee la empresa y el teléfono, y guarda un contacto `.vcf` para Android.
 
-Este repositorio también tiene el código. GitHub Pages es la app que se abre en el navegador.
+GitHub Pages (`https://msakiya.github.io/fotocontacto/`) queda listo en `/docs`, pero GitHub no lo activa mientras la cuenta tenga un bloqueo de facturación. Mientras tanto la página pública es el enlace de arriba.
 
 ## Uso
 
-1. Abre [msakiya.github.io/fotocontacto](https://msakiya.github.io/fotocontacto/).
+1. Abre el enlace de la página.
 2. **Tomar foto** o elegir de la galería.
 3. Revisa empresa, teléfono y notas.
 4. **Guardar en contactos** — Android abre el archivo `.vcf`.
@@ -24,10 +25,4 @@ npm install
 npm run dev
 ```
 
-La página pública en `/docs` usa lectura de texto en el navegador, para que funcione en GitHub Pages sin servidor.
-
-## Stack
-
-- React 19 + TanStack Start (app Grok)
-- Página estática en GitHub Pages (`/docs`)
-- vCard 3.0 para Contactos de Android
+La página pública está en `/docs`.
