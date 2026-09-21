@@ -1,49 +1,33 @@
 # FotoContacto (Ficha)
 
-**Este repositorio es público.** Cualquiera puede ver y clonar el código sin iniciar sesión:
+**Página pública (para todos):** [https://msakiya.github.io/fotocontacto/](https://msakiya.github.io/fotocontacto/)
 
-[https://github.com/msakiya/fotocontacto](https://github.com/msakiya/fotocontacto)
+Fotografía una tarjeta o un flyer. La página lee la empresa y el teléfono, y guarda un contacto `.vcf` para Android.
 
-GitHub muestra **archivos**. La app para usar en el teléfono (cámara + contactos) vive en Grok, en la ficha publicada — no en esta página de GitHub.
-
-## Qué hace
-
-Fotografía una tarjeta de presentación o un flyer. Lee el **nombre de la empresa** y el **teléfono**, y deja el resto (cargo, correo, web, dirección) en las **notas** del contacto.
-
-En Android, **Guardar en contactos** genera un `.vcf` que la app Contactos puede importar.
+Este repositorio también tiene el código. GitHub Pages es la app que se abre en el navegador.
 
 ## Uso
 
-1. **Tomar foto** o elegir una imagen de la galería.
-2. Revisa empresa, teléfono y notas.
-3. Guarda: Android abre Contactos con el archivo `.vcf`.
+1. Abre [msakiya.github.io/fotocontacto](https://msakiya.github.io/fotocontacto/).
+2. **Tomar foto** o elegir de la galería.
+3. Revisa empresa, teléfono y notas.
+4. **Guardar en contactos** — Android abre el archivo `.vcf`.
 
-También puedes instalarla en la pantalla de inicio desde el navegador del teléfono.
+En el teléfono: Chrome → menú → **Añadir a la pantalla de inicio**.
 
 ## Desarrollo
 
+La app completa (con lector Grok) corre en este repo:
+
 ```bash
 npm install
-```
-
-Crea una variable de entorno `XAI_API_KEY` (clave de [xAI](https://x.ai)) para que el lector de tarjetas funcione. Sin ella, la cámara y el formulario siguen disponibles, pero no se extrae el texto.
-
-```bash
 npm run dev
 ```
 
-```bash
-npm run build
-npm run typecheck
-```
+La página pública en `/docs` usa lectura de texto en el navegador, para que funcione en GitHub Pages sin servidor.
 
 ## Stack
 
-- React 19 + TanStack Start
-- Tailwind v4
-- Grok (visión) para leer la tarjeta
+- React 19 + TanStack Start (app Grok)
+- Página estática en GitHub Pages (`/docs`)
 - vCard 3.0 para Contactos de Android
-
-## Privacidad
-
-Las fotos se envían al API de xAI solo cuando tú pulsas escanear. Los contactos guardados en la app quedan en el navegador (`localStorage`); el `.vcf` es el que pasa a la agenda del teléfono.
